@@ -14,6 +14,6 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils ack
+brew install grc coreutils ack tig
 
 exit 0
