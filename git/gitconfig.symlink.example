@@ -9,6 +9,7 @@
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]
+        s  = status -s
         st = status
         ci = commit
         co = checkout
