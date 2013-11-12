@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# Tail a log using less - provides the ability to scroll and search
+alias tl="less +F --ignore-case"
