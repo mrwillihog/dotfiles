@@ -11,7 +11,7 @@
 #
 
 git ls-tree --name-only -z -r HEAD $* |
-xargs -0 -n1 git blame --line-porcelain |
+xargs -0 -n1 git blame -w --line-porcelain |
 grep "^author " |
 sort |
 uniq -c |
