@@ -10,8 +10,8 @@
 # git ownage src/
 #
 
-git ls-tree --name-only -r HEAD $* |
-xargs -n1 git blame --line-porcelain |
+git ls-tree --name-only -z -r HEAD $* |
+xargs -0 -n1 git blame --line-porcelain |
 grep "^author " |
 sort |
 uniq -c |
