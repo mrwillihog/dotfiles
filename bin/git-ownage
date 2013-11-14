@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Find the number of lines contributed by each author.
+# WARNING: May take a while to run over large repositories
+#
+# $* A list of directories/files to run the command over
+#
+# Examples
+#
+# git ownage src/
+#
+
+git ls-tree --name-only -r HEAD $* |
+xargs -n1 git blame --line-porcelain |
+grep "^author " |
+sort |
+uniq -c |
+sort -nr |
+sed 's/author //'
