@@ -16,4 +16,5 @@ grep "^author " |
 sort |
 uniq -c |
 sort -nr |
-sed 's/author //'
+sed 's/author //' |
+awk '{print $0; sum+=$1;} END {printf "%4d Total\n",sum}'
