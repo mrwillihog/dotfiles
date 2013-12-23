@@ -1,0 +1,27 @@
+{
+    "auto_complete_commit_on_tab": true,
+    "color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow.tmTheme",
+    "ensure_newline_at_eof_on_save": true,
+    "font_face": "Ubuntu Mono",
+    "font_options":
+    [
+        "subpixel_antialias"
+    ],
+    "font_size": 16.0,
+    "highlight_line": true,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "line_padding_bottom": 2,
+    "line_padding_top": 2,
+    "remember_open_files": false,
+    "rulers":
+    [
+        120
+    ],
+    "theme": "Soda Light.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+}
