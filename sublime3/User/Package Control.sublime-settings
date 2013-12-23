@@ -1,6 +1,13 @@
 {
 	"installed_packages":
 	[
+		"Cucumber",
+		"Emmet",
+		"Hayaku - tools for writing CSS faster",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-phpcs",
+		"SublimeLinter-ruby",
 		"Tomorrow Color Schemes"
 	]
 }
