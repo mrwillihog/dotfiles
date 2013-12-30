@@ -1,13 +1,16 @@
 {
 	"installed_packages":
 	[
+		"ChangeList",
 		"Cucumber",
+		"DashDoc",
 		"Emmet",
 		"Hayaku - tools for writing CSS faster",
+		"nginx",
+		"RemoteEdit",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
-		"SublimeLinter-phpcs",
-		"SublimeLinter-ruby",
+		"SublimeSBT",
 		"Tomorrow Color Schemes"
 	]
 }

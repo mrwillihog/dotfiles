@@ -1,0 +1,3 @@
+[
+    { "keys": ["super+alt+down"], "command": "goto_definition" }
+]
