@@ -21,9 +21,9 @@ git_dirty() {
   else
     if [[ "$st" =~ ^nothing ]]
     then
-      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo " on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo " on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
@@ -72,9 +72,17 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)$(directory_name) $(git_dirty)$(need_push)\n› '
+username() {
+  echo "%{$fg_bold[green]%}%n%{$reset_color%}"
+}
+
+hostname() {
+  echo "%{$fg_bold[blue]%}%m%{$reslet_color%}"
+}
+
+export PROMPT=$'$(username)@$(hostname) $(directory_name)$(git_dirty)$(need_push)› '
 set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
+  export RPROMPT="[%T]"
 }
 
 precmd() {
